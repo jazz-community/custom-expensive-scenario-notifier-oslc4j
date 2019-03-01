@@ -17,33 +17,22 @@ package com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.service;
 
 import org.eclipse.lyo.client.oslc.jazz.JazzFormAuthClient;
 
-/**
- * Interface for a basic Expensive Scenario Service that passes the information
- * required between service calls using a string.
- *
- */
-public interface IExpensiveScenarioService {
+public interface IPersistedExpensiveScenarioService {
 
 	/**
-	 * Start an expensive scenario.
-	 * 
-	 * @return The request body that is needed in the stop command
+	 * Start the custom expensive scenario.
+	 * Store the request response data in a file to persist it.
+	 *  
+	 * @throws Exception
+	 */
+	void start(JazzFormAuthClient client) throws Exception;
+
+	/**
+	 * Stop the custom expensive scenario.
+	 * Read the request response data from a file that persists it.
 	 * 
 	 * @throws Exception
 	 */
-	public String start(final JazzFormAuthClient client) throws Exception;
-
-	/**
-	 * Stop the expensive scenario.
-	 * 
-	 * @param startRequestResponse the response string from the start command
-	 * @throws Exception
-	 */
-	public void stop(final JazzFormAuthClient client, String startRequestResponse) throws Exception;
-
-	/**
-	 * @return the scenario name, never null
-	 */
-	public Object getScenarioName();
+	void stop(JazzFormAuthClient client) throws Exception;
 
 }

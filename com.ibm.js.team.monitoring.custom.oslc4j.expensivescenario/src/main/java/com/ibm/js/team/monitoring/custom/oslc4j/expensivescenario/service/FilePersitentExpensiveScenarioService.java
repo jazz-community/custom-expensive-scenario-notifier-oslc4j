@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2012 - 2013, 2018 IBM Corporation.
+ * Copyright (c) 2012 - 2019 IBM Corporation.
  *
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -28,7 +28,7 @@ import org.eclipse.lyo.client.oslc.jazz.JazzFormAuthClient;
  * The information to stop the expensive scenario is persisted as a file.
  *
  */
-public class FilePersitentExpensiveScenarioService {
+public class FilePersitentExpensiveScenarioService implements IPersistedExpensiveScenarioService {
 
 	private static final String SCENARIO_RESPONSE_FILE_EXTENSION = ".json";
 	private static final String SCENARIO_RESPONSE_FILE_PATH_ROOT_FOLDER = "./";
@@ -52,12 +52,10 @@ public class FilePersitentExpensiveScenarioService {
 	}
 
 
-	/**
-	 * Start the custom expensive scenario.
-	 * Store the request response data in a file to persist it.
-	 *  
-	 * @throws Exception
+	/* (non-Javadoc)
+	 * @see com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.service.IPersistedExpensiveScenarioService#start(org.eclipse.lyo.client.oslc.jazz.JazzFormAuthClient)
 	 */
+	@Override
 	public void start(final JazzFormAuthClient client) throws Exception {
 		String responseString = fExpensiveScenarioService.start(client);
 		FileWriter fileWriter = new FileWriter(getScenarioResponseFileName());
@@ -65,12 +63,10 @@ public class FilePersitentExpensiveScenarioService {
 		fileWriter.close();
 	}
 
-	/**
-	 * Stop the custom expensive scenario.
-	 * Read the request response data from a file that persists it.
-	 * 
-	 * @throws Exception
+	/* (non-Javadoc)
+	 * @see com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.service.IPersistedExpensiveScenarioService#stop(org.eclipse.lyo.client.oslc.jazz.JazzFormAuthClient)
 	 */
+	@Override
 	public void stop(final JazzFormAuthClient client)
 			throws Exception {
 		Path path = Paths.get(getScenarioResponseFileName());

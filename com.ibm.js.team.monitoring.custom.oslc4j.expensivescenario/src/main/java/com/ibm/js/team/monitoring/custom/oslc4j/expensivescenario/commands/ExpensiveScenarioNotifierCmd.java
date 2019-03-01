@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2012 - 2013, 2018 IBM Corporation.
+ * Copyright (c) 2012 - 2019 IBM Corporation.
  *
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -30,6 +30,7 @@ import com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.framework.ICom
 import com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.service.ExpensiveScenarioService;
 import com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.service.FilePersitentExpensiveScenarioService;
 import com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.service.IExpensiveScenarioService;
+import com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.service.IPersistedExpensiveScenarioService;
 
 /**
  *
@@ -139,7 +140,7 @@ public class ExpensiveScenarioNotifierCmd extends AbstractCommand implements ICo
 			if (client.login() == HttpStatus.SC_OK) {
 
 				IExpensiveScenarioService expensiveScenarioService = new ExpensiveScenarioService(authUrl, scenarioName);
-				FilePersitentExpensiveScenarioService expensiveScenario = new FilePersitentExpensiveScenarioService(expensiveScenarioService);
+				IPersistedExpensiveScenarioService expensiveScenario = new FilePersitentExpensiveScenarioService(expensiveScenarioService);
 				if(ExpensiveScenarioNotifierConstants.PARAMETER_MODE_START.equals(mode)) {
 					expensiveScenario.start(client);
 				}
