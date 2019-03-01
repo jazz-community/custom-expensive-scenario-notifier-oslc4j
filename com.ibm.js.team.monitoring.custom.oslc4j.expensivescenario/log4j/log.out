@@ -1,0 +1,83 @@
+2019/03/01 10:11:31 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 238, col: 62] {W107} Bad URI: <https://localhost:9443/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: WASReqURL=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/; Secure; HttpOnly". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+.\OSLC4JExpensive.json
+java.nio.file.NoSuchFileException: .\OSLC4JExpensive.json
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.Files.readAllBytes(Files.java:3152)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.service.FilePersitentExpensiveScenarioService.stop(FilePersitentExpensiveScenarioService.java:77)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.commands.ExpensiveScenarioNotifierCmd.execute(ExpensiveScenarioNotifierCmd.java:135)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.framework.AbstractCommand.run(AbstractCommand.java:79)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifier.execute(ExpensiveScenarioNotifier.java:114)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifier.main(ExpensiveScenarioNotifier.java:55)
+2019/03/01 10:11:33 MEZ
+Failed.
+2019/03/01 10:12:01 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 238, col: 62] {W107} Bad URI: <https://localhost:9443/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: WASReqURL=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/; Secure; HttpOnly". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/01 10:12:02 MEZ
+Success.
+2019/03/01 10:12:19 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 238, col: 62] {W107} Bad URI: <https://localhost:9443/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: WASReqURL=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/; Secure; HttpOnly". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/01 10:12:21 MEZ
+Success.
+2019/03/01 10:12:35 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 238, col: 62] {W107} Bad URI: <https://localhost:9443/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: WASReqURL=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/; Secure; HttpOnly". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+.\OSLC4JExpensive.json
+java.nio.file.NoSuchFileException: .\OSLC4JExpensive.json
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.Files.readAllBytes(Files.java:3152)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.service.FilePersitentExpensiveScenarioService.stop(FilePersitentExpensiveScenarioService.java:77)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.commands.ExpensiveScenarioNotifierCmd.execute(ExpensiveScenarioNotifierCmd.java:135)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.framework.AbstractCommand.run(AbstractCommand.java:79)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifier.execute(ExpensiveScenarioNotifier.java:114)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifier.main(ExpensiveScenarioNotifier.java:55)
+2019/03/01 10:12:37 MEZ
+Failed.
+2019/03/01 10:12:52 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+Missing command 
+Syntax: -command commandName {[-parameter] [parameterValue]}
+Available commands: 
+
+expensiveScenario
+	Syntax : -command expensiveScenario -url https://<server>:port/<context>/ -user <userId> -password <password> -scenarioName <scenarioName> -mode <mode>
+	Example: -command expensiveScenario -url https://clm.example.com:9443/rm/ -user ADMIN -password ****** -scenarioName MyCustomExpensiveScenario -mode start
+Failed.
+2019/03/01 10:12:52 MEZ
+Failed.
+2019/03/01 10:17:29 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+Missing command 
+Syntax: -command commandName {[-parameter] [parameterValue]}
+Available commands: 
+
+expensiveScenario
+	Syntax : -command expensiveScenario -url https://<server>:port/<context>/ -user <userId> -password <password> -scenarioName <scenarioName> -mode <mode>
+	Example: -command expensiveScenario -url https://clm.example.com:9443/rm/ -user ADMIN -password ****** -scenarioName MyCustomExpensiveScenario -mode start
+	Example: -command expensiveScenario -url https://clm.example.com:9443/rm/ -user ADMIN -password ****** -scenarioName MyCustomExpensiveScenario -mode stop
+Failed.
+2019/03/01 10:17:29 MEZ
+Failed.

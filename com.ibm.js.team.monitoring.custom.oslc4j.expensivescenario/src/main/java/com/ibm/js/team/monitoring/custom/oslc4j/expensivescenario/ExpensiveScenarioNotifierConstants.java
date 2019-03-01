@@ -75,7 +75,8 @@ public interface ExpensiveScenarioNotifierConstants {
 	public static final String PARAMETER_MODE = "mode";
 	public static final String PARAMETER_MODE_DESCRIPTION = "The mode of the operation: Start or Stop";
 	public static final String PARAMETER_MODE_PROTOTYPE = "<mode>";
-	public static final Object PARAMETER_MODE_EXAMPLE = PARAMETER_MODE_START ;
+	public static final Object PARAMETER_MODE_EXAMPLE_START = PARAMETER_MODE_START;
+	public static final Object PARAMETER_MODE_EXAMPLE_STOP = PARAMETER_MODE_STOP;
 	
 
 }

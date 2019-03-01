@@ -101,7 +101,19 @@ public class ExpensiveScenarioNotifierCmd extends AbstractCommand implements ICo
 				ExpensiveScenarioNotifierConstants.PARAMETER_SCENARIONAME,
 				ExpensiveScenarioNotifierConstants.PARAMETER_SCENARIONAME_EXAMPLE,
 				ExpensiveScenarioNotifierConstants.PARAMETER_MODE,
-				ExpensiveScenarioNotifierConstants.PARAMETER_MODE_EXAMPLE);
+				ExpensiveScenarioNotifierConstants.PARAMETER_MODE_EXAMPLE_START);
+		logger.info("\tExample: -{} {} -{} {} -{} {} -{} {} -{} {} -{} {}",
+				ExpensiveScenarioNotifierConstants.PARAMETER_COMMAND, getCommandName(),
+				ExpensiveScenarioNotifierConstants.PARAMETER_URL,
+				ExpensiveScenarioNotifierConstants.PARAMETER_URL_EXAMPLE,
+				ExpensiveScenarioNotifierConstants.PARAMETER_USER,
+				ExpensiveScenarioNotifierConstants.PARAMETER_USER_ID_EXAMPLE,
+				ExpensiveScenarioNotifierConstants.PARAMETER_PASSWORD,
+				ExpensiveScenarioNotifierConstants.PARAMETER_PASSWORD_EXAMPLE,
+				ExpensiveScenarioNotifierConstants.PARAMETER_SCENARIONAME,
+				ExpensiveScenarioNotifierConstants.PARAMETER_SCENARIONAME_EXAMPLE,
+				ExpensiveScenarioNotifierConstants.PARAMETER_MODE,
+				ExpensiveScenarioNotifierConstants.PARAMETER_MODE_EXAMPLE_STOP);
 	}
 
 	@Override
