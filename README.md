@@ -13,7 +13,7 @@ This project contains code to do this using OSLC4J. It might be necessary to cha
 Syntax:
 ```bash
 -command expensiveScenario 
-	-url https://<server>:port/<context>/ 
+	-url https://<server><:port>/<context>/ 
 	-user <userId> 
 	-password <password> 
 	-scenarioName <scenarioName> 
