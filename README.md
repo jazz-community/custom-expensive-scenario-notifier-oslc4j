@@ -7,7 +7,7 @@ Another, simpler approach, is to access the ICounterContentService using the URL
 
 The available API allows to register custom scenarios by name using a start and a stop command.
 
-This project contains code to do this using OSLC4J.
+This project contains code to do this using OSLC4J. It might be necessary to change the login process to log into applications other than ccm. E.g. for RM log into JTS.
 
 
 Syntax:
