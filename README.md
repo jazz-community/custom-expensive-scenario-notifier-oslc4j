@@ -39,3 +39,8 @@ Example start Custom Scenario MyCustomExpensiveScenario:
 	-scenarioName MyCustomExpensiveScenario 
 	-mode stop
 ```
+
+There are two implementations of the service interface. 
+
+* One implementation returns the scenario information created when starting a custom scenario instance as a string. This string can be used to stop the scenario counter in the stop command.
+* The second implementation persists the information in a file. This interface is used in the main command.  
