@@ -81,3 +81,363 @@ expensiveScenario
 Failed.
 2019/03/01 10:17:29 MEZ
 Failed.
+2019/03/05 14:22:31 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 242, col: 83] {W107} Bad URI: <https://vl-396d0a48-ihs.rtp.raleigh.ibm.com/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: JSA_CSRF_b6d8e417-d060-45af-afac-fe6898f7a76f=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+.\OSLC4JExpensive.json
+java.nio.file.NoSuchFileException: .\OSLC4JExpensive.json
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.Files.readAllBytes(Files.java:3152)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.service.FilePersitentExpensiveScenarioService.stop(FilePersitentExpensiveScenarioService.java:73)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.commands.ExpensiveScenarioNotifierCmd.execute(ExpensiveScenarioNotifierCmd.java:148)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.framework.AbstractCommand.run(AbstractCommand.java:78)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifier.execute(ExpensiveScenarioNotifier.java:114)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifier.main(ExpensiveScenarioNotifier.java:55)
+2019/03/05 14:22:37 MEZ
+Failed.
+2019/03/05 14:22:50 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 242, col: 83] {W107} Bad URI: <https://vl-396d0a48-ihs.rtp.raleigh.ibm.com/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+2019/03/05 14:23:25 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+2019/03/05 14:24:09 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+2019/03/05 14:24:43 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 242, col: 83] {W107} Bad URI: <https://vl-396d0a48-ihs.rtp.raleigh.ibm.com/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: JSA_CSRF_014ce17b-adca-4afc-8746-69339a43c8c4=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+Invalid cookie header: "Set-Cookie: JSA_CSRF_014ce17b-adca-4afc-8746-69339a43c8c4=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/05 14:24:49 MEZ
+Success.
+2019/03/05 14:25:13 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 242, col: 83] {W107} Bad URI: <https://vl-396d0a48-ihs.rtp.raleigh.ibm.com/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: JSA_CSRF_84aa7b92-d21b-402b-a621-03c3ccf1fabe=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+Invalid cookie header: "Set-Cookie: JSA_CSRF_84aa7b92-d21b-402b-a621-03c3ccf1fabe=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/05 14:25:18 MEZ
+Success.
+2019/03/05 14:42:17 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 242, col: 83] {W107} Bad URI: <https://vl-396d0a48-ihs.rtp.raleigh.ibm.com/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: JSA_CSRF_b802fec3-c55e-4914-b5f2-5a2ce0acbad3=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+Invalid cookie header: "Set-Cookie: JSA_CSRF_b802fec3-c55e-4914-b5f2-5a2ce0acbad3=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/05 14:42:22 MEZ
+Success.
+2019/03/05 14:44:55 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 242, col: 83] {W107} Bad URI: <https://vl-396d0a48-ihs.rtp.raleigh.ibm.com/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: JSA_CSRF_1e6d7f16-a512-45e5-ad4b-794a26dbcc6f=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+Invalid cookie header: "Set-Cookie: JSA_CSRF_1e6d7f16-a512-45e5-ad4b-794a26dbcc6f=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/05 14:45:01 MEZ
+Success.
+2019/03/05 14:45:03 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 242, col: 83] {W107} Bad URI: <https://vl-396d0a48-ihs.rtp.raleigh.ibm.com/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: JSA_CSRF_ec8826b4-e92d-46cb-9f0b-d45099ac1f6e=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+Invalid cookie header: "Set-Cookie: JSA_CSRF_ec8826b4-e92d-46cb-9f0b-d45099ac1f6e=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/05 14:45:08 MEZ
+Success.
+2019/03/05 14:45:11 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 242, col: 83] {W107} Bad URI: <https://vl-396d0a48-ihs.rtp.raleigh.ibm.com/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: JSA_CSRF_d109f892-e3c3-4b87-976a-b99623066c8b=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+Invalid cookie header: "Set-Cookie: JSA_CSRF_d109f892-e3c3-4b87-976a-b99623066c8b=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/05 14:45:16 MEZ
+Success.
+2019/03/05 14:45:19 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 242, col: 83] {W107} Bad URI: <https://vl-396d0a48-ihs.rtp.raleigh.ibm.com/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: JSA_CSRF_39ebe277-5db0-4bb9-9f0a-8edbf3c27767=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+Invalid cookie header: "Set-Cookie: JSA_CSRF_39ebe277-5db0-4bb9-9f0a-8edbf3c27767=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/05 14:45:24 MEZ
+Success.
+2019/03/05 14:45:27 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 242, col: 83] {W107} Bad URI: <https://vl-396d0a48-ihs.rtp.raleigh.ibm.com/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: JSA_CSRF_39af86a3-eafc-45ec-91f4-4ecb9d838fb8=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+Invalid cookie header: "Set-Cookie: JSA_CSRF_39af86a3-eafc-45ec-91f4-4ecb9d838fb8=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/05 14:45:32 MEZ
+Success.
+2019/03/05 14:54:05 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 242, col: 83] {W107} Bad URI: <https://vl-396d0a48-ihs.rtp.raleigh.ibm.com/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: JSA_CSRF_6be59594-931a-4873-96bc-3c8b2fdaf045=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+Invalid cookie header: "Set-Cookie: JSA_CSRF_6be59594-931a-4873-96bc-3c8b2fdaf045=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/05 14:54:10 MEZ
+Success.
+2019/03/05 14:54:19 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 242, col: 83] {W107} Bad URI: <https://vl-396d0a48-ihs.rtp.raleigh.ibm.com/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: JSA_CSRF_e3a60d7a-bd90-4fe9-911e-d894e0685706=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+Invalid cookie header: "Set-Cookie: JSA_CSRF_e3a60d7a-bd90-4fe9-911e-d894e0685706=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/05 14:54:24 MEZ
+Success.
+2019/03/05 14:54:31 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 242, col: 83] {W107} Bad URI: <https://vl-396d0a48-ihs.rtp.raleigh.ibm.com/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: JSA_CSRF_a0b0ee45-a9c0-4143-b11e-ff26bdfa0dc1=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+.\OSLC4JExpensive1.json
+java.nio.file.NoSuchFileException: .\OSLC4JExpensive1.json
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.Files.readAllBytes(Files.java:3152)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.service.FilePersitentExpensiveScenarioService.stop(FilePersitentExpensiveScenarioService.java:73)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.commands.ExpensiveScenarioNotifierCmd.execute(ExpensiveScenarioNotifierCmd.java:148)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.framework.AbstractCommand.run(AbstractCommand.java:78)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifier.execute(ExpensiveScenarioNotifier.java:114)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifier.main(ExpensiveScenarioNotifier.java:55)
+2019/03/05 14:54:36 MEZ
+Failed.
+2019/03/05 14:54:43 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 242, col: 83] {W107} Bad URI: <https://vl-396d0a48-ihs.rtp.raleigh.ibm.com/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: JSA_CSRF_76450ed3-661d-422b-82fe-6a614ad34cd9=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+Invalid cookie header: "Set-Cookie: JSA_CSRF_76450ed3-661d-422b-82fe-6a614ad34cd9=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/05 14:54:48 MEZ
+Success.
+2019/03/05 14:54:54 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 242, col: 83] {W107} Bad URI: <https://vl-396d0a48-ihs.rtp.raleigh.ibm.com/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: JSA_CSRF_4bc83d47-63aa-490b-90c1-a88ee0d4c095=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+Invalid cookie header: "Set-Cookie: JSA_CSRF_4bc83d47-63aa-490b-90c1-a88ee0d4c095=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/05 14:54:59 MEZ
+Success.
+2019/03/05 15:48:05 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 242, col: 83] {W107} Bad URI: <https://vl-396d0a48-ihs.rtp.raleigh.ibm.com/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: JSA_CSRF_056eef8d-9218-4f59-a4b7-61abc427001c=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+Invalid cookie header: "Set-Cookie: JSA_CSRF_056eef8d-9218-4f59-a4b7-61abc427001c=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/05 15:48:10 MEZ
+Success.
+2019/03/05 15:48:20 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 242, col: 83] {W107} Bad URI: <https://vl-396d0a48-ihs.rtp.raleigh.ibm.com/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: JSA_CSRF_f03592a6-28f3-4eec-9e88-7318b5935515=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+Invalid cookie header: "Set-Cookie: JSA_CSRF_f03592a6-28f3-4eec-9e88-7318b5935515=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/ccm; Secure". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/05 15:48:25 MEZ
+Success.
+2019/03/05 16:19:47 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 41, col: 82] {W107} Bad URI: <https://clm.example.com:9443/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+OSLCC003: An error occurred processing the root services document.  Server location: https://clm.example.com:9443/rm.
+org.eclipse.lyo.client.exception.RootServicesException: OSLCC003: An error occurred processing the root services document.  Server location: https://clm.example.com:9443/rm.
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.processRootServices(JazzRootServicesHelper.java:201)
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.<init>(JazzRootServicesHelper.java:118)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.commands.ExpensiveScenarioNotifierCmd.execute(ExpensiveScenarioNotifierCmd.java:135)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.framework.AbstractCommand.run(AbstractCommand.java:78)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifier.execute(ExpensiveScenarioNotifier.java:114)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifier.main(ExpensiveScenarioNotifier.java:55)
+Caused by: org.eclipse.lyo.client.exception.ResourceNotFoundException: OSLCC004: The requested resource could not be found.  Resource: https://clm.example.com:9443/rm  Value: http://open-services.net/xmlns/cm/1.0/cmServiceProviders.
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.getRootServicesProperty(JazzRootServicesHelper.java:216)
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.processRootServices(JazzRootServicesHelper.java:177)
+	... 5 more
+2019/03/05 16:19:49 MEZ
+Failed.
+2019/03/05 16:20:45 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 41, col: 82] {W107} Bad URI: <https://clm.example.com:9443/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+OSLCC003: An error occurred processing the root services document.  Server location: https://clm.example.com:9443/rm/.
+org.eclipse.lyo.client.exception.RootServicesException: OSLCC003: An error occurred processing the root services document.  Server location: https://clm.example.com:9443/rm/.
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.processRootServices(JazzRootServicesHelper.java:201)
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.<init>(JazzRootServicesHelper.java:118)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.commands.ExpensiveScenarioNotifierCmd.execute(ExpensiveScenarioNotifierCmd.java:135)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.framework.AbstractCommand.run(AbstractCommand.java:78)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifier.execute(ExpensiveScenarioNotifier.java:114)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifier.main(ExpensiveScenarioNotifier.java:55)
+Caused by: org.eclipse.lyo.client.exception.ResourceNotFoundException: OSLCC004: The requested resource could not be found.  Resource: https://clm.example.com:9443/rm/  Value: http://open-services.net/xmlns/cm/1.0/cmServiceProviders.
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.getRootServicesProperty(JazzRootServicesHelper.java:216)
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.processRootServices(JazzRootServicesHelper.java:177)
+	... 5 more
+2019/03/05 16:20:47 MEZ
+Failed.
+2019/03/05 16:21:42 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 41, col: 82] {W107} Bad URI: <https://clm.example.com:9443/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+OSLCC003: An error occurred processing the root services document.  Server location: https://clm.example.com:9443/rm.
+org.eclipse.lyo.client.exception.RootServicesException: OSLCC003: An error occurred processing the root services document.  Server location: https://clm.example.com:9443/rm.
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.processRootServices(JazzRootServicesHelper.java:201)
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.<init>(JazzRootServicesHelper.java:118)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.commands.ExpensiveScenarioNotifierCmd.execute(ExpensiveScenarioNotifierCmd.java:135)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.framework.AbstractCommand.run(AbstractCommand.java:78)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifier.execute(ExpensiveScenarioNotifier.java:114)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifier.main(ExpensiveScenarioNotifier.java:55)
+Caused by: org.eclipse.lyo.client.exception.ResourceNotFoundException: OSLCC004: The requested resource could not be found.  Resource: https://clm.example.com:9443/rm  Value: http://open-services.net/xmlns/cm/1.0/cmServiceProviders.
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.getRootServicesProperty(JazzRootServicesHelper.java:216)
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.processRootServices(JazzRootServicesHelper.java:177)
+	... 5 more
+2019/03/05 16:21:44 MEZ
+Failed.
+2019/03/05 16:23:04 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 41, col: 82] {W107} Bad URI: <https://clm.example.com:9443/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+OSLCC003: An error occurred processing the root services document.  Server location: https://clm.example.com:9443/rm.
+org.eclipse.lyo.client.exception.RootServicesException: OSLCC003: An error occurred processing the root services document.  Server location: https://clm.example.com:9443/rm.
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.processRootServices(JazzRootServicesHelper.java:201)
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.<init>(JazzRootServicesHelper.java:118)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.commands.ExpensiveScenarioNotifierCmd.execute(ExpensiveScenarioNotifierCmd.java:135)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.framework.AbstractCommand.run(AbstractCommand.java:78)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifier.execute(ExpensiveScenarioNotifier.java:114)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifier.main(ExpensiveScenarioNotifier.java:55)
+Caused by: org.eclipse.lyo.client.exception.ResourceNotFoundException: OSLCC004: The requested resource could not be found.  Resource: https://clm.example.com:9443/rm  Value: http://open-services.net/xmlns/cm/1.0/cmServiceProviders.
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.getRootServicesProperty(JazzRootServicesHelper.java:216)
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.processRootServices(JazzRootServicesHelper.java:177)
+	... 5 more
+2019/03/05 16:23:07 MEZ
+Failed.
+2019/03/05 16:23:17 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 41, col: 82] {W107} Bad URI: <https://clm.example.com:9443/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+OSLCC003: An error occurred processing the root services document.  Server location: https://clm.example.com:9443/rm.
+org.eclipse.lyo.client.exception.RootServicesException: OSLCC003: An error occurred processing the root services document.  Server location: https://clm.example.com:9443/rm.
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.processRootServices(JazzRootServicesHelper.java:201)
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.<init>(JazzRootServicesHelper.java:118)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.commands.ExpensiveScenarioNotifierCmd.execute(ExpensiveScenarioNotifierCmd.java:135)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.framework.AbstractCommand.run(AbstractCommand.java:78)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifier.execute(ExpensiveScenarioNotifier.java:114)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifier.main(ExpensiveScenarioNotifier.java:55)
+Caused by: org.eclipse.lyo.client.exception.ResourceNotFoundException: OSLCC004: The requested resource could not be found.  Resource: https://clm.example.com:9443/rm  Value: http://open-services.net/xmlns/cm/1.0/cmServiceProviders.
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.getRootServicesProperty(JazzRootServicesHelper.java:216)
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.processRootServices(JazzRootServicesHelper.java:177)
+	... 5 more
+2019/03/05 16:23:20 MEZ
+Failed.
+2019/03/05 16:23:38 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 41, col: 82] {W107} Bad URI: <https://clm.example.com:9443/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+OSLCC003: An error occurred processing the root services document.  Server location: https://clm.example.com:9443/rm.
+org.eclipse.lyo.client.exception.RootServicesException: OSLCC003: An error occurred processing the root services document.  Server location: https://clm.example.com:9443/rm.
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.processRootServices(JazzRootServicesHelper.java:201)
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.<init>(JazzRootServicesHelper.java:118)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.commands.ExpensiveScenarioNotifierCmd.execute(ExpensiveScenarioNotifierCmd.java:135)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.framework.AbstractCommand.run(AbstractCommand.java:78)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifier.execute(ExpensiveScenarioNotifier.java:114)
+	at com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifier.main(ExpensiveScenarioNotifier.java:55)
+Caused by: org.eclipse.lyo.client.exception.ResourceNotFoundException: OSLCC004: The requested resource could not be found.  Resource: https://clm.example.com:9443/rm  Value: http://open-services.net/xmlns/cm/1.0/cmServiceProviders.
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.getRootServicesProperty(JazzRootServicesHelper.java:216)
+	at org.eclipse.lyo.client.oslc.jazz.JazzRootServicesHelper.processRootServices(JazzRootServicesHelper.java:177)
+	... 5 more
+2019/03/05 16:23:41 MEZ
+Failed.
+2019/03/05 16:23:56 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+2019/03/05 16:24:48 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+2019/03/06 13:52:43 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 238, col: 68] {W107} Bad URI: <https://clm.example.com:9443/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: WASReqURL=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/; Secure; HttpOnly". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/06 13:52:46 MEZ
+Success.
+2019/03/06 13:53:20 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 238, col: 68] {W107} Bad URI: <https://clm.example.com:9443/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: WASReqURL=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/; Secure; HttpOnly". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/06 13:53:23 MEZ
+Success.
+2019/03/06 13:55:57 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 238, col: 68] {W107} Bad URI: <https://clm.example.com:9443/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: WASReqURL=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/; Secure; HttpOnly". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/06 13:56:00 MEZ
+Success.
+2019/03/06 13:56:23 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 238, col: 68] {W107} Bad URI: <https://clm.example.com:9443/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: WASReqURL=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/; Secure; HttpOnly". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/06 13:56:25 MEZ
+Success.
+2019/03/06 13:56:39 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 238, col: 68] {W107} Bad URI: <https://clm.example.com:9443/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: WASReqURL=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/; Secure; HttpOnly". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/06 13:56:41 MEZ
+Success.
+2019/03/06 13:56:46 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 238, col: 68] {W107} Bad URI: <https://clm.example.com:9443/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: WASReqURL=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/; Secure; HttpOnly". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/06 13:56:48 MEZ
+Success.
+2019/03/06 13:57:41 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+Invalid cookie header: "Set-Cookie: WASReqURL=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/; Secure; HttpOnly". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/06 13:57:44 MEZ
+Success.
+2019/03/06 13:57:57 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+Invalid cookie header: "Set-Cookie: WASReqURL=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/; Secure; HttpOnly". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/06 13:57:59 MEZ
+Success.
+2019/03/06 14:00:40 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 41, col: 82] {W107} Bad URI: <https://clm.example.com:9443/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: WASReqURL=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/; Secure; HttpOnly". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/06 14:00:42 MEZ
+Success.
+2019/03/06 14:00:47 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 41, col: 82] {W107} Bad URI: <https://clm.example.com:9443/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: WASReqURL=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/; Secure; HttpOnly". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/06 14:00:50 MEZ
+Success.
+2019/03/06 14:01:23 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 41, col: 82] {W107} Bad URI: <https://clm.example.com:9443/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: WASReqURL=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/; Secure; HttpOnly". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/06 14:01:26 MEZ
+Success.
+2019/03/06 14:01:28 MEZ
+
+Expensive Scenario Announcer Version: 1.0
+[line: 41, col: 82] {W107} Bad URI: <https://clm.example.com:9443/clmhelp> Code: 8/NON_INITIAL_DOT_SEGMENT in PATH: The path contains a segment /../ not at the beginning of a relative reference, or it contains a /./ These should be removed.
+Invalid cookie header: "Set-Cookie: WASReqURL=""; Expires=Thu, 01 Dec 1994 16:00:00 GMT; Path=/; Secure; HttpOnly". Invalid 'expires' attribute: Thu, 01 Dec 1994 16:00:00 GMT
+2019/03/06 14:01:31 MEZ
+Success.

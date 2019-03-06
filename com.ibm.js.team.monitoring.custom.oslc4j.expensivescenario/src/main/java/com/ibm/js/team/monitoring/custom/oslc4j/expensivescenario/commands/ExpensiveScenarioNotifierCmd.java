@@ -130,16 +130,25 @@ public class ExpensiveScenarioNotifierCmd extends AbstractCommand implements ICo
 		String mode = getCmd().getOptionValue(ExpensiveScenarioNotifierConstants.PARAMETER_MODE);
 
 		try {
-
-			// Login
-			JazzRootServicesHelper helper = new JazzRootServicesHelper(webContextUrl, OSLCConstants.OSLC_CM);
-			logger.trace("Login");
-			//	String authUrl = webContextUrl.replaceFirst("/rm", "/jts");
+			
 			String authUrl = webContextUrl;
+			// Handle different applications
+			JazzRootServicesHelper helper=null;
+			if(webContextUrl.contains("/ccm")){
+				helper = new JazzRootServicesHelper(webContextUrl, OSLCConstants.OSLC_CM);			
+			} else if(webContextUrl.contains("/qm")){
+				helper = new JazzRootServicesHelper(webContextUrl, OSLCConstants.OSLC_QM);							
+			} else if(webContextUrl.contains("/rm")) {
+				helper = new JazzRootServicesHelper(webContextUrl, OSLCConstants.OSLC_RM);
+				authUrl = webContextUrl.replaceFirst("/rm", "/jts"); // Requirements Management delegates to JTS
+			} else {
+				throw new Exception("Unble to find Jazz Domain: " + webContextUrl);
+			}
+			logger.trace("Login");
 			JazzFormAuthClient client = helper.initFormClient(user, passwd, authUrl);
 			if (client.login() == HttpStatus.SC_OK) {
 
-				IExpensiveScenarioService expensiveScenarioService = new ExpensiveScenarioService(authUrl, scenarioName);
+				IExpensiveScenarioService expensiveScenarioService = new ExpensiveScenarioService(webContextUrl, scenarioName);
 				IPersistedExpensiveScenarioService expensiveScenario = new FilePersitentExpensiveScenarioService(expensiveScenarioService);
 				if(ExpensiveScenarioNotifierConstants.PARAMETER_MODE_START.equals(mode)) {
 					expensiveScenario.start(client);

@@ -11,6 +11,7 @@
 <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
 <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifier"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-command expensiveScenario -mode start -url &quot;https://clm.example.com:9443/rm&quot; -user myadmin -password myadmin -scenarioName &quot;RMOSLC4JExpensive&quot;"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario"/>
 <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
 </launchConfiguration>
