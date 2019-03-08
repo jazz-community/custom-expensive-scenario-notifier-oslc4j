@@ -149,14 +149,22 @@ public class ExpensiveScenarioNotifierCmd extends AbstractCommand implements ICo
 			if (client.login() == HttpStatus.SC_OK) {
 
 				IExpensiveScenarioService expensiveScenarioService = new ExpensiveScenarioService(webContextUrl, scenarioName);
-				IPersistedExpensiveScenarioService expensiveScenario = new FilePersitentExpensiveScenarioService(expensiveScenarioService);
+				IPersistedExpensiveScenarioService filePersistedExpensiveScenario = new FilePersitentExpensiveScenarioService(expensiveScenarioService);
+				
 				if(ExpensiveScenarioNotifierConstants.PARAMETER_MODE_START.equals(mode)) {
-					expensiveScenario.start(client);
-				}
+					filePersistedExpensiveScenario.start(client);
+					return true;
+				} 
 				if(ExpensiveScenarioNotifierConstants.PARAMETER_MODE_STOP.equals(mode)) {
-					expensiveScenario.stop(client);
+					filePersistedExpensiveScenario.stop(client);
+					return true;
+				} 
+				if(ExpensiveScenarioNotifierConstants.PARAMETER_MODE_DEBUG.equals(mode)) {
+					String scenarioInstance = expensiveScenarioService.start(client);
+					expensiveScenarioService.stop(client, scenarioInstance);
+					return true;
 				}
-				result = true;
+				logger.info("Command mode not supported '{}'", mode);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
