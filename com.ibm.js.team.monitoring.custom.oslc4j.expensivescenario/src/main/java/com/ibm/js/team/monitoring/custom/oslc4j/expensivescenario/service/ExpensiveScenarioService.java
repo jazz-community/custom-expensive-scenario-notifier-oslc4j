@@ -31,7 +31,6 @@ import org.apache.http.HttpStatus;
 import org.apache.wink.client.ClientResponse;
 import org.eclipse.lyo.client.oslc.OSLCConstants;
 import org.eclipse.lyo.client.oslc.jazz.JazzFormAuthClient;
-import org.eclipse.lyo.oslc4j.core.OSLC4JConstants;
 import org.eclipse.lyo.oslc4j.core.model.OslcMediaType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -39,8 +38,6 @@ import org.slf4j.LoggerFactory;
 import com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.util.HeaderRequestInterceptor;
 
 public class ExpensiveScenarioService implements IExpensiveScenarioService {
-
-
 
 	public static final Logger logger = LoggerFactory.getLogger(ExpensiveScenarioService.class);
 
@@ -53,7 +50,8 @@ public class ExpensiveScenarioService implements IExpensiveScenarioService {
 	private static final String SCENARIO_INSTANCE_ID = "scenarioInstanceId";
 
 	private URI fPublicURI = null;
-	private String fScenarioName;
+	private String fScenarioName = null;
+	private JazzFormAuthClient fClient = null;
 
 	/**
 	 * Start and stop expensive scenario counter are performed persisting the
@@ -65,15 +63,19 @@ public class ExpensiveScenarioService implements IExpensiveScenarioService {
 	 * @param scenarioName   the name of the scenario
 	 * @throws URISyntaxException
 	 */
-	public ExpensiveScenarioService(final String publicURI, final String scenarioName)
+	public ExpensiveScenarioService(final JazzFormAuthClient client, final String publicURI, final String scenarioName)
 			throws URISyntaxException, NullPointerException {
+		if (client == null)
+			throw new NullPointerException("Client URI can not be null");
+		this.fClient = client;
 		if (publicURI == null)
 			throw new NullPointerException("Public URI can not be null");
-		fPublicURI = new URI(publicURI.replaceAll("/$", ""));
+		this.fPublicURI = new URI(publicURI.replaceAll("/$", ""));
 		if (scenarioName == null)
 			throw new NullPointerException("Scenario name can not be null");
-		fScenarioName = scenarioName;
+		this.fScenarioName = scenarioName;
 	}
+
 	/**
 	 * Construct the service URI from the public URI.
 	 * 
@@ -85,7 +87,7 @@ public class ExpensiveScenarioService implements IExpensiveScenarioService {
 	}
 
 	@Override
-	public String start(final JazzFormAuthClient client) throws Exception {
+	public String start() throws Exception {
 		ClientResponse response = null;
 		try {
 			// Compose the request body
@@ -96,15 +98,16 @@ public class ExpensiveScenarioService implements IExpensiveScenarioService {
 			addHeader.put(CONTENT_TYPE, OSLCConstants.CT_JSON);
 			addHeader.put(ACCEPT_HEADER, OSLCConstants.CT_JSON);
 			HashMap<String, String> removeHeader = new HashMap<String, String>();
-			removeHeader.put(OSLCConstants.OSLC_CORE_VERSION,null);
-			HeaderRequestInterceptor.installRequestInterceptor(client, addHeader, removeHeader);
+			removeHeader.put(OSLCConstants.OSLC_CORE_VERSION, null);
+			HeaderRequestInterceptor.installRequestInterceptor(this.fClient, addHeader, removeHeader);
 			// Get the connection
 			String startUri = getServiceURI(EXPENSIVE_SCENARIO_START_PATH).toString();
 			logger.debug("StartScenario");
 			logger.trace("Json '{}'", scenarioRequest.toString());
 
-			response = client.createResource(startUri, scenarioRequest.toString(), OslcMediaType.APPLICATION_JSON);
-			HeaderRequestInterceptor.removeRequestInterceptor(client);
+			response = this.fClient.createResource(startUri, scenarioRequest.toString(),
+					OslcMediaType.APPLICATION_JSON);
+			HeaderRequestInterceptor.removeRequestInterceptor(this.fClient);
 			logger.debug("Status: " + response.getStatusCode());
 			/**
 			 * 
@@ -147,7 +150,7 @@ public class ExpensiveScenarioService implements IExpensiveScenarioService {
 	}
 
 	@Override
-	public void stop(final JazzFormAuthClient client, String startRequestResponse) throws Exception {
+	public void stop(final String startRequestResponse) throws Exception {
 		ClientResponse response = null;
 		try {
 
@@ -183,16 +186,16 @@ public class ExpensiveScenarioService implements IExpensiveScenarioService {
 			addHeader.put(CONTENT_TYPE, OSLCConstants.CT_JSON);
 			addHeader.put(ACCEPT_HEADER, OSLCConstants.CT_JSON);
 			HashMap<String, String> removeHeader = new HashMap<String, String>();
-			removeHeader.put(OSLCConstants.OSLC_CORE_VERSION,null);
-			HeaderRequestInterceptor.installRequestInterceptor(client, addHeader, removeHeader);
+			removeHeader.put(OSLCConstants.OSLC_CORE_VERSION, null);
+			HeaderRequestInterceptor.installRequestInterceptor(this.fClient, addHeader, removeHeader);
 			// Get the connection
 			String startUri = getServiceURI(EXPENSIVE_SCENARIO_STOP_PATH).toString();
 
 			logger.debug("StartScenario");
 			logger.trace("Json '{}'", startRequest);
 
-			response = client.createResource(startUri, startRequest, OslcMediaType.APPLICATION_JSON);
-			HeaderRequestInterceptor.removeRequestInterceptor(client);
+			response = this.fClient.createResource(startUri, startRequest, OslcMediaType.APPLICATION_JSON);
+			HeaderRequestInterceptor.removeRequestInterceptor(this.fClient);
 			logger.debug("Status: " + response.getStatusCode());
 			// logger.info("Response: " + RDFUtils.getRawResponse(response));
 			/**
@@ -232,6 +235,66 @@ public class ExpensiveScenarioService implements IExpensiveScenarioService {
 	@Override
 	public Object getScenarioName() {
 		return fScenarioName;
+	}
+	
+	/**
+	 * Stop a Resource Intensive Scenario instance
+	 * @see https://jazz.net/wiki/bin/view/Deployment/CreateCustomScenarios
+	 * 
+	 * Wrap all errors
+	 * 
+	 * @param scenarioInstance
+	 */
+	public static void stopScenario(final IExpensiveScenarioService scenarioService, final String scenarioInstance) {
+		try {
+			scenarioService.stop(scenarioInstance);
+		} catch (Exception e) {
+			logger.trace("Resource Intensive Scenario Notifier Service: Scenario can not be stopped!");
+		}
+	}
+	
+	/**
+	 * Start a Resource Intensive Scenario instance
+	 * @see https://jazz.net/wiki/bin/view/Deployment/CreateCustomScenarios
+	 * 
+	 * Wrap all errors
+	 * 
+	 * @param client
+	 * @param webContextUrl
+	 * @param commandName
+	 * @return
+	 */
+	public static String startScenario(final IExpensiveScenarioService scenarioService) {
+		String scenarioInstance=null;	
+		try {
+			scenarioInstance = scenarioService.start();
+		} catch (Exception e) {
+			logger.trace("Resource Intensive Scenario Notifier Service: Scenario can not be started!");
+		}
+		return scenarioInstance;
+	}
+	
+	/**
+	 * Create a Resource Intensive Scenario instance
+	 * @see https://jazz.net/wiki/bin/view/Deployment/CreateCustomScenarios
+	 * 
+	 * Wrap all errors
+	 * 
+	 * @param client
+	 * @param webContextUrl
+	 * @param toolName
+	 * @param commandName
+	 * @param versionInfo
+	 * @return
+	 */
+	public static IExpensiveScenarioService createScenarioService(final JazzFormAuthClient client, final String webContextUrl, final String toolName, final String commandName, final String versionInfo) {
+		IExpensiveScenarioService scenarioService = null;	
+		try {
+			scenarioService = new ExpensiveScenarioService(client, webContextUrl, toolName +" " + versionInfo + " " + commandName);
+		} catch (Exception e) {
+			logger.trace("Resource Intensive Scenario Notifier Service: Scenario can not be started!");
+		}
+		return scenarioService;
 	}
 
 }

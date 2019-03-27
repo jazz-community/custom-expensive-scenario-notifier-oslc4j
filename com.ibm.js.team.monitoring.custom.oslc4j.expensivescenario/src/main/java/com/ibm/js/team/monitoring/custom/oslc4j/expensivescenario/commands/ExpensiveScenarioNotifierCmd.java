@@ -27,10 +27,7 @@ import org.slf4j.LoggerFactory;
 import com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifierConstants;
 import com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.framework.AbstractCommand;
 import com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.framework.ICommand;
-import com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.service.ExpensiveScenarioService;
-import com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.service.FilePersitentExpensiveScenarioService;
-import com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.service.IExpensiveScenarioService;
-import com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.service.IPersistedExpensiveScenarioService;
+import com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.service.RegisterScenarioExample;
 
 /**
  *
@@ -69,8 +66,7 @@ public class ExpensiveScenarioNotifierCmd extends AbstractCommand implements ICo
 				&& cmd.hasOption(ExpensiveScenarioNotifierConstants.PARAMETER_USER)
 				&& cmd.hasOption(ExpensiveScenarioNotifierConstants.PARAMETER_PASSWORD)
 				&& cmd.hasOption(ExpensiveScenarioNotifierConstants.PARAMETER_SCENARIONAME)
-				&& cmd.hasOption(ExpensiveScenarioNotifierConstants.PARAMETER_MODE)
-				)) {
+				&& cmd.hasOption(ExpensiveScenarioNotifierConstants.PARAMETER_MODE))) {
 			isValid = false;
 		}
 		return isValid;
@@ -130,15 +126,15 @@ public class ExpensiveScenarioNotifierCmd extends AbstractCommand implements ICo
 		String mode = getCmd().getOptionValue(ExpensiveScenarioNotifierConstants.PARAMETER_MODE);
 
 		try {
-			
+
 			String authUrl = webContextUrl;
 			// Handle different applications
-			JazzRootServicesHelper helper=null;
-			if(webContextUrl.contains("/ccm")){
-				helper = new JazzRootServicesHelper(webContextUrl, OSLCConstants.OSLC_CM);			
-			} else if(webContextUrl.contains("/qm")){
-				helper = new JazzRootServicesHelper(webContextUrl, OSLCConstants.OSLC_QM);							
-			} else if(webContextUrl.contains("/rm")) {
+			JazzRootServicesHelper helper = null;
+			if (webContextUrl.contains("/ccm")) {
+				helper = new JazzRootServicesHelper(webContextUrl, OSLCConstants.OSLC_CM);
+			} else if (webContextUrl.contains("/qm")) {
+				helper = new JazzRootServicesHelper(webContextUrl, OSLCConstants.OSLC_QM);
+			} else if (webContextUrl.contains("/rm")) {
 				helper = new JazzRootServicesHelper(webContextUrl, OSLCConstants.OSLC_RM);
 				authUrl = webContextUrl.replaceFirst("/rm", "/jts"); // Requirements Management delegates to JTS
 			} else {
@@ -147,24 +143,7 @@ public class ExpensiveScenarioNotifierCmd extends AbstractCommand implements ICo
 			logger.trace("Login");
 			JazzFormAuthClient client = helper.initFormClient(user, passwd, authUrl);
 			if (client.login() == HttpStatus.SC_OK) {
-
-				IExpensiveScenarioService expensiveScenarioService = new ExpensiveScenarioService(webContextUrl, scenarioName);
-				IPersistedExpensiveScenarioService filePersistedExpensiveScenario = new FilePersitentExpensiveScenarioService(expensiveScenarioService);
-				
-				if(ExpensiveScenarioNotifierConstants.PARAMETER_MODE_START.equals(mode)) {
-					filePersistedExpensiveScenario.start(client);
-					return true;
-				} 
-				if(ExpensiveScenarioNotifierConstants.PARAMETER_MODE_STOP.equals(mode)) {
-					filePersistedExpensiveScenario.stop(client);
-					return true;
-				} 
-				if(ExpensiveScenarioNotifierConstants.PARAMETER_MODE_DEBUG.equals(mode)) {
-					String scenarioInstance = expensiveScenarioService.start(client);
-					expensiveScenarioService.stop(client, scenarioInstance);
-					return true;
-				}
-				logger.info("Command mode not supported '{}'", mode);
+				RegisterScenarioExample.registerScenario(client, webContextUrl, mode, scenarioName);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

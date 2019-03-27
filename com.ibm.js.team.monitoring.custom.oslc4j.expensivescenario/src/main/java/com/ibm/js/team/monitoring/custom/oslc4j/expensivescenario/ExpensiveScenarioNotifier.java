@@ -19,7 +19,7 @@ import java.net.URISyntaxException;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
-import org.apache.commons.cli.GnuParser;
+import org.apache.commons.cli.DefaultParser;
 import org.apache.commons.cli.MissingArgumentException;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
@@ -75,9 +75,8 @@ public class ExpensiveScenarioNotifier {
 		options.addOption(ExpensiveScenarioNotifierConstants.PARAMETER_COMMAND, true,
 				ExpensiveScenarioNotifierConstants.PARAMETER_COMMAND_EXAMPLE);
 		try {
-
 			// Parse the command line
-			CommandLineParser cliParser = new GnuParser();
+			CommandLineParser cliParser = new DefaultParser();
 			// ignore unrecognized options, we only care for other issues,
 			cmd = cliParser.parse(options, args, true);
 		} catch (ParseException e) {

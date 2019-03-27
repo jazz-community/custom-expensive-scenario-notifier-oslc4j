@@ -21,13 +21,12 @@ package com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario;
  */
 public interface ExpensiveScenarioNotifierConstants {
 
-	public static final String version = "1.0";
+	public static final String version = "1.2";
 
 	// Commands and parameters
 	public static final String PARAMETER_COMMAND = "command";
 	public static final String PARAMETER_COMMAND_DESCRIPTION = "The command to execute.";
 	public static final String PARAMETER_COMMAND_EXAMPLE = "exportConfigurations";
-
 
 	public static final String PARAMETER_URL = "url";
 	public static final String PARAMETER_URL_DESCRIPTION = "The Public URI of the application.";
@@ -43,7 +42,6 @@ public interface ExpensiveScenarioNotifierConstants {
 	public static final String PARAMETER_PASSWORD_DESCRIPTION = "The password of the user.";
 	public static final String PARAMETER_PASSWORD_EXAMPLE = "******";
 	public static final String PARAMETER_PASSWORD_PROTOTYPE = "<password>";
-
 
 	// Headers
 	public static final String DOORS_REQUEST_TYPE_HEADER = "DoorsRP-Request-Type";
@@ -78,6 +76,5 @@ public interface ExpensiveScenarioNotifierConstants {
 	public static final Object PARAMETER_MODE_EXAMPLE_START = PARAMETER_MODE_START;
 	public static final Object PARAMETER_MODE_EXAMPLE_STOP = PARAMETER_MODE_STOP;
 	public static final String PARAMETER_MODE_DEBUG = "debug";
-	
 
 }
