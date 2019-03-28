@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project default="create_run_jar" name="Create Runnable Jar for Project com.ibm.js.team.monitoring.custom.expensivescenario with libraries in sub-folder">
+<?xml version="1.0" encoding="UTF-8"?><project default="create_run_jar" name="Create Runnable Jar for Project com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario with libraries in sub-folder">
     <!--this file was created by Eclipse Runnable JAR Export Wizard-->
     <!--ANT 1.7 is required                                        -->
     <!--define folder properties-->
@@ -8,116 +8,67 @@
     <target name="create_run_jar">
         <jar destfile="${dir.jarfile}/esnoj.jar">
             <manifest>
-                <attribute name="Main-Class" value="com.ibm.js.team.monitoring.custom.expensivescenario.ExpensiveScenarioNotifier"/>
-                <attribute name="Class-Path" value=". esnoj_lib/org.eclipse.core.runtime_3.8.0.v20120912-155025.jar esnoj_lib/org.eclipse.osgi_3.8.2.v20130124-134944.jar esnoj_lib/org.eclipse.equinox.weaving.hook_1.0.200.v20120524-1707.jar esnoj_lib/org.eclipse.equinox.transforms.hook_1.0.400.v20120522-2049.jar esnoj_lib/org.eclipse.equinox.servletbridge.extensionbundle_1.2.100.v20120522-2049.jar esnoj_lib/javax.crypto_1.0.0.v20170718_1537.jar esnoj_lib/org.eclipse.equinox.common_3.6.100.v20120522-1841.jar esnoj_lib/org.eclipse.core.jobs_3.5.300.v20120912-155018.jar esnoj_lib/runtime_registry_compatibility.jar esnoj_lib/org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar esnoj_lib/org.eclipse.equinox.preferences_3.5.1.v20121031-182809.jar esnoj_lib/org.eclipse.core.contenttype_3.4.200.v20120523-2004.jar esnoj_lib/org.eclipse.equinox.app_1.3.100.v20120522-1841.jar esnoj_lib/com.ibm.team.repository.common_1.4.4000.v20171031_1821.jar esnoj_lib/org.apache.commons.logging_1.0.4.v201101211617.jar esnoj_lib/com.ibm.team.repository.common.json_1.2.3000.v20171025_0017.jar esnoj_lib/com.ibm.team.repository.client_1.3.3000.v20170913_0038.jar esnoj_lib/com.ibm.team.repository.common.remoteaccess_1.2.4000.v20170906_0017.jar esnoj_lib/apache-mime4j-0.6.jar esnoj_lib/com.ibm.icu_4.4.2.v20110823.jar esnoj_lib/com.ibm.rational.wvcm.ct_3.0.1200.v20161206_1803.jar esnoj_lib/com.ibm.rational.wvcm.factory_3.0.400.v20161206_1803.jar esnoj_lib/com.ibm.rational.wvcm.interop_3.1.1000.v20161206_1803.jar esnoj_lib/com.ibm.rational.wvcm.ri.repo_3.0.900.v20161206_1803.jar esnoj_lib/com.ibm.team.build.client_3.0.1500.v20170420_1859.jar esnoj_lib/com.ibm.team.build.common_3.1.1600.v20170925_1637.jar esnoj_lib/com.ibm.team.calm.foundation.common_3.1.1500.v20171022_1552.jar esnoj_lib/com.ibm.team.connector.scm.client_3.0.1300.v20161206_1803.jar esnoj_lib/com.ibm.team.connector.scm.common_3.1.500.v20170613_0129.jar esnoj_lib/com.ibm.team.connector.scm.operations_3.1.700.v20161206_1803.jar esnoj_lib/com.ibm.team.datawarehouse.common_2.2.3000.v20171025_0017.jar esnoj_lib/com.ibm.team.dev.jdojo.runtime.common_3.0.1100.v20170613_0129.jar esnoj_lib/com.ibm.team.enterprise.buildablesubset.client_3.1.900.v20161206_1803.jar esnoj_lib/com.ibm.team.enterprise.buildablesubset.common_3.1.1200.v20170613_0129.jar esnoj_lib/com.ibm.team.enterprise.scd.client_1.1.0.v20161102_2211.jar esnoj_lib/com.ibm.team.enterprise.scd.common_1.1.100.v20171020_1633.jar esnoj_lib/com.ibm.team.filesystem.client.1.7.jar esnoj_lib/com.ibm.team.filesystem.client.daemon_3.1.1000.v20171018_0210.jar esnoj_lib/com.ibm.team.filesystem.client.workitems_3.1.1300.v20170628_0309.jar esnoj_lib/com.ibm.team.filesystem.client_3.2.1000.v20171026_0239.jar esnoj_lib/com.ibm.team.filesystem.common.workitems_3.1.1200.v20170824_1555.jar esnoj_lib/com.ibm.team.filesystem.common_3.2.1000.v20171001_1635.jar esnoj_lib/com.ibm.team.foundation.client_1.1.2000.v20170413_2241.jar esnoj_lib/com.ibm.team.foundation.common_1.3.4000.v20170413_2233.jar esnoj_lib/com.ibm.team.foundation.rcp.core_1.1.4000.v20170413_2241.jar esnoj_lib/com.ibm.team.fulltext.common_1.2.3000.v20170906_0017.jar esnoj_lib/com.ibm.team.interop.client.rest_3.0.900.v20170613_0129.jar esnoj_lib/com.ibm.team.interop.client_3.0.900.v20161206_1803.jar esnoj_lib/com.ibm.team.interop.common_3.0.1200.v20170613_0129.jar esnoj_lib/com.ibm.team.process.client_1.3.3000.v20170413_2241.jar esnoj_lib/com.ibm.team.process.common_1.3.4000.v20171003_0213.jar esnoj_lib/com.ibm.team.reports.client_2.1.2000.v20170413_2241.jar esnoj_lib/com.ibm.team.reports.common_2.4.3000.v20171025_0017.jar esnoj_lib/com.ibm.team.repository.client_1.3.3000.v20170913_0038.jar esnoj_lib/com.ibm.team.repository.common.json_1.2.3000.v20171025_0017.jar esnoj_lib/com.ibm.team.repository.common.remoteaccess.auth_1.3.3000.v20171025_0017.jar esnoj_lib/com.ibm.team.repository.common.remoteaccess_1.2.4000.v20170906_0017.jar esnoj_lib/com.ibm.team.repository.common.serialize_1.2.4000.v20171025_0017.jar esnoj_lib/com.ibm.team.repository.common.transport_1.2.2000.v20171025_0017.jar esnoj_lib/com.ibm.team.repository.common_1.4.4000.v20171031_1821.jar esnoj_lib/com.ibm.team.repository.rcp.common_3.1.900.v20170613_0129.jar esnoj_lib/com.ibm.team.rtc.common_3.1.1700.v20171013_0240.jar esnoj_lib/com.ibm.team.rtc.foundation.api.common_3.1.1000.v20170613_0129.jar esnoj_lib/com.ibm.team.scm.admin.common_3.2.400.v20170613_0129.jar esnoj_lib/com.ibm.team.scm.client_3.2.1000.v20170929_0134.jar esnoj_lib/com.ibm.team.scm.common_3.2.1000.v20171022_1552.jar esnoj_lib/com.ibm.team.workitem.api.common_3.1.1300.v20170811_1441.jar esnoj_lib/com.ibm.team.workitem.client_3.1.1700.v20170827_1657.jar esnoj_lib/com.ibm.team.workitem.common_3.2.900.v20170928_1641.jar esnoj_lib/commons-io-1.2.jar esnoj_lib/httpclient-4.5.jar esnoj_lib/httpclient-cache-4.5.jar esnoj_lib/httpclient-win-4.5.jar esnoj_lib/httpcore-4.4.1.jar esnoj_lib/httpcore-ab-4.4.1.jar esnoj_lib/httpcore-nio-4.4.1.jar esnoj_lib/httpmime-4.5.jar esnoj_lib/javax.servlet_3.0.0.v201112011016.jar esnoj_lib/javax.wvcm_1.7.0.v20161102_2211.jar esnoj_lib/net.oauth_0.2.3000.v20170718_1537.jar esnoj_lib/org.apache.commons.codec_1.9.0.jar esnoj_lib/org.apache.commons.httpclient_3.1.0.v201012070820.jar esnoj_lib/org.apache.commons.logging_1.0.4.v201101211617.jar esnoj_lib/org.apache.log4j_1.2.15.v201012070815.jar esnoj_lib/org.eclipse.core.filesystem_1.3.200.v20130115-145044.jar esnoj_lib/org.eclipse.core.jobs_3.5.300.v20120912-155018.jar esnoj_lib/org.eclipse.core.resources_3.8.1.v20121114-124432.jar esnoj_lib/org.eclipse.core.runtime_3.8.0.v20120912-155025.jar esnoj_lib/org.eclipse.emf.common_2.8.0.v20130125-0546.jar esnoj_lib/org.eclipse.emf.ecore.change_2.8.0.v20130125-0546.jar esnoj_lib/org.eclipse.emf.ecore.xmi_2.8.1.v20130125-0546.jar esnoj_lib/org.eclipse.emf.ecore_2.8.3.v20130125-0546.jar esnoj_lib/org.eclipse.equinox.common_3.6.100.v20120522-1841.jar esnoj_lib/org.eclipse.equinox.preferences_3.5.1.v20121031-182809.jar esnoj_lib/org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar esnoj_lib/org.eclipse.equinox.registry_3.5.201.v20131009-2050.jar esnoj_lib/org.eclipse.jface.text_3.8.2.v20121126-164145.jar esnoj_lib/org.eclipse.jface.text_3.8.3.v20141001-2118.jar esnoj_lib/org.eclipse.osgi_3.8.2.v20130124-134944.jar esnoj_lib/org.eclipse.osgi_3.8.2.v20140416-1442.jar esnoj_lib/org.eclipse.text_3.5.200.v20120523-1310.jar esnoj_lib/org.eclipse.xsd_2.8.1.v20130125-0826.jar esnoj_lib/commons-io-1.2.jar"/>
+                <attribute name="Main-Class" value="com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario.ExpensiveScenarioNotifier"/>
+                <attribute name="Class-Path" value=". esnoj_lib/javax.json-1.1.2.jar esnoj_lib/javax.json-api-1.1.2.jar esnoj_lib/oslc-java-client-2.4.0.jar esnoj_lib/jena-tdb-3.6.0.jar esnoj_lib/jena-arq-3.6.0.jar esnoj_lib/jena-core-3.6.0.jar esnoj_lib/jena-iri-3.6.0.jar esnoj_lib/commons-cli-1.4.jar esnoj_lib/jena-base-3.6.0.jar esnoj_lib/commons-csv-1.5.jar esnoj_lib/collection-0.7.jar esnoj_lib/jena-shaded-guava-3.6.0.jar esnoj_lib/jsonld-java-0.11.1.jar esnoj_lib/jackson-core-2.9.0.jar esnoj_lib/jackson-databind-2.9.0.jar esnoj_lib/jackson-annotations-2.9.0.jar esnoj_lib/commons-io-2.5.jar esnoj_lib/httpclient-cache-4.5.3.jar esnoj_lib/libthrift-0.10.0.jar esnoj_lib/jcl-over-slf4j-1.7.25.jar esnoj_lib/commons-lang3-3.4.jar esnoj_lib/jena-tdb2-3.6.0.jar esnoj_lib/jena-dboe-trans-data-3.6.0.jar esnoj_lib/jena-dboe-transaction-3.6.0.jar esnoj_lib/jena-dboe-base-3.6.0.jar esnoj_lib/jena-dboe-index-3.6.0.jar esnoj_lib/jena-rdfconnection-3.6.0.jar esnoj_lib/oauth-20100527.jar esnoj_lib/oauth-consumer-20100527.jar esnoj_lib/oauth-httpclient4-20090913.jar esnoj_lib/wink-client-1.4.jar esnoj_lib/wink-common-1.4.jar esnoj_lib/geronimo-jaxrs_1.1_spec-1.0.jar esnoj_lib/geronimo-annotation_1.1_spec-1.0.jar esnoj_lib/jaxb-api-2.2.jar esnoj_lib/stax-api-1.0-2.jar esnoj_lib/jaxb-impl-2.2.1.1.jar esnoj_lib/activation-1.1.jar esnoj_lib/wink-client-apache-httpclient-1.4.jar esnoj_lib/oslc4j-core-2.4.0.jar esnoj_lib/assertj-core-3.8.0.jar esnoj_lib/oslc4j-jena-provider-2.4.0.jar esnoj_lib/oslc4j-json4j-provider-2.4.0.jar esnoj_lib/wink-json4j-1.2.1-incubating.jar esnoj_lib/httpcore-4.4.5.jar esnoj_lib/httpclient-4.5.2.jar esnoj_lib/commons-logging-1.2.jar esnoj_lib/commons-codec-1.9.jar esnoj_lib/xercesImpl-2.8.0.jar esnoj_lib/xml-apis-1.3.04.jar esnoj_lib/javax.servlet-api-3.1.0.jar esnoj_lib/jsr311-api-1.1.1.jar esnoj_lib/slf4j-api-1.7.5.jar esnoj_lib/slf4j-log4j12-1.7.5.jar esnoj_lib/log4j-1.2.17.jar"/>
             </manifest>
-            <fileset dir="C:/Users/RalphSchoon/git/custom-expensive-scenario-notifier-plainjava/com.ibm.js.team.monitoring.custom.expensivescenario/bin"/>
-            <fileset dir="C:/Users/RalphSchoon/git/custom-expensive-scenario-notifier-plainjava/com.ibm.js.team.monitoring.custom.service.expensivescenario/bin"/>
+            <fileset dir="C:/Users/RalphSchoon/git/custom-expensive-scenario-notifier-oslc4j/com.ibm.js.team.monitoring.custom.oslc4j.expensivescenario/target/classes"/>
         </jar>
         <delete dir="${dir.jarfile}/esnoj_lib"/>
         <mkdir dir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/rtc-client-sdk/plugins/org.eclipse.core.runtime_3.8.0.v20120912-155025.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/rtc-client-sdk/plugins/org.eclipse.osgi_3.8.2.v20130124-134944.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/rtc-client-sdk/plugins/org.eclipse.equinox.weaving.hook_1.0.200.v20120524-1707.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/rtc-client-sdk/plugins/org.eclipse.equinox.transforms.hook_1.0.400.v20120522-2049.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/rtc-client-sdk/plugins/org.eclipse.equinox.servletbridge.extensionbundle_1.2.100.v20120522-2049.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/rtc-client-sdk/plugins/javax.crypto_1.0.0.v20170718_1537.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/rtc-client-sdk/plugins/org.eclipse.equinox.common_3.6.100.v20120522-1841.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/rtc-client-sdk/plugins/org.eclipse.core.jobs_3.5.300.v20120912-155018.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/rtc-client-sdk/plugins/org.eclipse.core.runtime.compatibility.registry_3.5.101.v20130108-163257/runtime_registry_compatibility.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/rtc-client-sdk/plugins/org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/rtc-client-sdk/plugins/org.eclipse.equinox.preferences_3.5.1.v20121031-182809.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/rtc-client-sdk/plugins/org.eclipse.core.contenttype_3.4.200.v20120523-2004.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/rtc-client-sdk/plugins/org.eclipse.equinox.app_1.3.100.v20120522-1841.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/rtc-client-sdk/plugins/com.ibm.team.repository.common_1.4.4000.v20171031_1821.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/rtc-client-sdk/plugins/org.apache.commons.logging_1.0.4.v201101211617.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/rtc-client-sdk/plugins/com.ibm.team.repository.common.json_1.2.3000.v20171025_0017.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/rtc-client-sdk/plugins/com.ibm.team.repository.client_1.3.3000.v20170913_0038.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/rtc-client-sdk/plugins/com.ibm.team.repository.common.remoteaccess_1.2.4000.v20170906_0017.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/apache-mime4j-0.6.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.icu_4.4.2.v20110823.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.rational.wvcm.ct_3.0.1200.v20161206_1803.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.rational.wvcm.factory_3.0.400.v20161206_1803.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.rational.wvcm.interop_3.1.1000.v20161206_1803.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.rational.wvcm.ri.repo_3.0.900.v20161206_1803.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.build.client_3.0.1500.v20170420_1859.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.build.common_3.1.1600.v20170925_1637.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.calm.foundation.common_3.1.1500.v20171022_1552.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.connector.scm.client_3.0.1300.v20161206_1803.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.connector.scm.common_3.1.500.v20170613_0129.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.connector.scm.operations_3.1.700.v20161206_1803.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.datawarehouse.common_2.2.3000.v20171025_0017.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.dev.jdojo.runtime.common_3.0.1100.v20170613_0129.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.enterprise.buildablesubset.client_3.1.900.v20161206_1803.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.enterprise.buildablesubset.common_3.1.1200.v20170613_0129.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.enterprise.scd.client_1.1.0.v20161102_2211.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.enterprise.scd.common_1.1.100.v20171020_1633.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.filesystem.client.1.7.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.filesystem.client.daemon_3.1.1000.v20171018_0210.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.filesystem.client.workitems_3.1.1300.v20170628_0309.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.filesystem.client_3.2.1000.v20171026_0239.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.filesystem.common.workitems_3.1.1200.v20170824_1555.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.filesystem.common_3.2.1000.v20171001_1635.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.foundation.client_1.1.2000.v20170413_2241.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.foundation.common_1.3.4000.v20170413_2233.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.foundation.rcp.core_1.1.4000.v20170413_2241.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.fulltext.common_1.2.3000.v20170906_0017.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.interop.client.rest_3.0.900.v20170613_0129.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.interop.client_3.0.900.v20161206_1803.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.interop.common_3.0.1200.v20170613_0129.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.process.client_1.3.3000.v20170413_2241.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.process.common_1.3.4000.v20171003_0213.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.reports.client_2.1.2000.v20170413_2241.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.reports.common_2.4.3000.v20171025_0017.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.repository.client_1.3.3000.v20170913_0038.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.repository.common.json_1.2.3000.v20171025_0017.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.repository.common.remoteaccess.auth_1.3.3000.v20171025_0017.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.repository.common.remoteaccess_1.2.4000.v20170906_0017.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.repository.common.serialize_1.2.4000.v20171025_0017.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.repository.common.transport_1.2.2000.v20171025_0017.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.repository.common_1.4.4000.v20171031_1821.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.repository.rcp.common_3.1.900.v20170613_0129.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.rtc.common_3.1.1700.v20171013_0240.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.rtc.foundation.api.common_3.1.1000.v20170613_0129.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.scm.admin.common_3.2.400.v20170613_0129.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.scm.client_3.2.1000.v20170929_0134.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.scm.common_3.2.1000.v20171022_1552.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.workitem.api.common_3.1.1300.v20170811_1441.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.workitem.client_3.1.1700.v20170827_1657.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/com.ibm.team.workitem.common_3.2.900.v20170928_1641.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/commons-io-1.2.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/httpclient-4.5.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/httpclient-cache-4.5.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/httpclient-win-4.5.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/httpcore-4.4.1.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/httpcore-ab-4.4.1.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/httpcore-nio-4.4.1.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/httpmime-4.5.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/javax.servlet_3.0.0.v201112011016.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/javax.wvcm_1.7.0.v20161102_2211.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/net.oauth_0.2.3000.v20170718_1537.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/org.apache.commons.codec_1.9.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/org.apache.commons.httpclient_3.1.0.v201012070820.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/org.apache.commons.logging_1.0.4.v201101211617.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/org.apache.log4j_1.2.15.v201012070815.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/org.eclipse.core.filesystem_1.3.200.v20130115-145044.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/org.eclipse.core.jobs_3.5.300.v20120912-155018.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/org.eclipse.core.resources_3.8.1.v20121114-124432.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/org.eclipse.core.runtime_3.8.0.v20120912-155025.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/org.eclipse.emf.common_2.8.0.v20130125-0546.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/org.eclipse.emf.ecore.change_2.8.0.v20130125-0546.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/org.eclipse.emf.ecore.xmi_2.8.1.v20130125-0546.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/org.eclipse.emf.ecore_2.8.3.v20130125-0546.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/org.eclipse.equinox.common_3.6.100.v20120522-1841.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/org.eclipse.equinox.preferences_3.5.1.v20121031-182809.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/org.eclipse.equinox.registry_3.5.201.v20131009-2050.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/org.eclipse.jface.text_3.8.2.v20121126-164145.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/org.eclipse.jface.text_3.8.3.v20141001-2118.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/org.eclipse.osgi_3.8.2.v20130124-134944.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/org.eclipse.osgi_3.8.2.v20140416-1442.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/org.eclipse.text_3.5.200.v20120523-1310.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/PlainJavaAPI/org.eclipse.xsd_2.8.1.v20130125-0826.jar" todir="${dir.jarfile}/esnoj_lib"/>
-        <copy file="C:/RTC605Dev/installs/rtc-client-sdk/plugins/org.apache.commons.io_1.2.1100.v20170718_1537/lib/commons-io-1.2.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/glassfish/javax.json/1.1.2/javax.json-1.1.2.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/javax/json/javax.json-api/1.1.2/javax.json-api-1.1.2.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/eclipse/lyo/clients/oslc-java-client/2.4.0/oslc-java-client-2.4.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/jena/jena-tdb/3.6.0/jena-tdb-3.6.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/jena/jena-arq/3.6.0/jena-arq-3.6.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/jena/jena-core/3.6.0/jena-core-3.6.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/jena/jena-iri/3.6.0/jena-iri-3.6.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/commons-cli/commons-cli/1.4/commons-cli-1.4.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/jena/jena-base/3.6.0/jena-base-3.6.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/commons/commons-csv/1.5/commons-csv-1.5.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/com/github/andrewoma/dexx/collection/0.7/collection-0.7.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/jena/jena-shaded-guava/3.6.0/jena-shaded-guava-3.6.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/com/github/jsonld-java/jsonld-java/0.11.1/jsonld-java-0.11.1.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.0/jackson-core-2.9.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.0/jackson-databind-2.9.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/httpcomponents/httpclient-cache/4.5.3/httpclient-cache-4.5.3.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/thrift/libthrift/0.10.0/libthrift-0.10.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/jena/jena-tdb2/3.6.0/jena-tdb2-3.6.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/jena/jena-dboe-trans-data/3.6.0/jena-dboe-trans-data-3.6.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/jena/jena-dboe-transaction/3.6.0/jena-dboe-transaction-3.6.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/jena/jena-dboe-base/3.6.0/jena-dboe-base-3.6.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/jena/jena-dboe-index/3.6.0/jena-dboe-index-3.6.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/jena/jena-rdfconnection/3.6.0/jena-rdfconnection-3.6.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/net/oauth/core/oauth/20100527/oauth-20100527.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/net/oauth/core/oauth-consumer/20100527/oauth-consumer-20100527.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/net/oauth/core/oauth-httpclient4/20090913/oauth-httpclient4-20090913.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/wink/wink-client/1.4/wink-client-1.4.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/wink/wink-common/1.4/wink-common-1.4.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/geronimo/specs/geronimo-jaxrs_1.1_spec/1.0/geronimo-jaxrs_1.1_spec-1.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/geronimo/specs/geronimo-annotation_1.1_spec/1.0/geronimo-annotation_1.1_spec-1.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/javax/xml/bind/jaxb-api/2.2/jaxb-api-2.2.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.1.1/jaxb-impl-2.2.1.1.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/wink/wink-client-apache-httpclient/1.4/wink-client-apache-httpclient-1.4.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/eclipse/lyo/oslc4j/core/oslc4j-core/2.4.0/oslc4j-core-2.4.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/assertj/assertj-core/3.8.0/assertj-core-3.8.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/eclipse/lyo/oslc4j/core/oslc4j-jena-provider/2.4.0/oslc4j-jena-provider-2.4.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/eclipse/lyo/oslc4j/core/oslc4j-json4j-provider/2.4.0/oslc4j-json4j-provider-2.4.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/wink/wink-json4j/1.2.1-incubating/wink-json4j-1.2.1-incubating.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/httpcomponents/httpcore/4.4.5/httpcore-4.4.5.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/xerces/xercesImpl/2.8.0/xercesImpl-2.8.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar" todir="${dir.jarfile}/esnoj_lib"/>
+        <copy file="C:/Users/RalphSchoon/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar" todir="${dir.jarfile}/esnoj_lib"/>
     </target>
 </project>
